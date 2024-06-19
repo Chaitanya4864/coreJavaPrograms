@@ -1,0 +1,15 @@
+class runner 
+{
+	public static double timeToCrossBridge(double speed, double length) 
+	{
+		double timeInSeconds =length/speed;
+		double timeInHours= timeInSeconds/3600;
+		return timeInHours;
+	}
+	public static void main(String[] args)
+	{
+		double speed=10.0;
+		double length=1000.0;
+		System.out.println("The time taken for the runner to cross the bridge is:"+timeToCrossBridge(speed,length)+"hours");
+	}
+}

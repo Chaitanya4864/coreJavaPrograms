@@ -1,0 +1,43 @@
+class Sumofdigits 
+{
+	public static void main(String[] args) 
+	{
+		int num=123;
+		if(countDigits(num))
+		{
+			System.out.println(sumOfDigits(num));
+		}
+		else
+		{
+			System.out.println("Not a four digit number");
+		}
+	}
+	public static boolean countDigits(int num)
+	{
+		int count=0;
+		while (num>0)
+		{
+			count++;
+			num=num/10;
+		}
+		if(count>=4)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	public static int sumOfDigits(int num)
+	{
+		int sum=0;
+		while (num>0)
+		{
+			int rem=num%10;
+			sum=sum+rem;
+			num=num/10;
+		}
+		return sum;
+	}
+}

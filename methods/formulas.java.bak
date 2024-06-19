@@ -1,0 +1,25 @@
+
+class formulas
+
+{
+	public static void main(String[] args) 
+	{
+		if(Lhs(2,3)==rhs(2,3))
+		{
+			System.out.println("Hence it is proved");
+		}
+		else {
+			System.out.println("Invalid");
+		}
+	}
+	public static int Lhs(int a,int b)
+	{
+		int res =(a-b)*(a-b);
+		return res;
+	}
+public static int Rhs(int a, int b)
+	{
+	int res1 =(a*a)+(b*b)-(2*a*b);
+	return res1;
+	}
+}

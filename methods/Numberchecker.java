@@ -1,0 +1,24 @@
+class Numberchecker 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(num(123));
+	}
+	public static String num(int num)
+	{
+		int originalNum=num;
+		int count=0;
+		while (num>0)
+		{
+			count++;
+			num/=10;
+		}
+		if (count>=4)
+		{
+			return Integer.toString(originalNum);
+		}
+		else {
+			return "Number has less than 4 digits";
+		}
+	}
+}

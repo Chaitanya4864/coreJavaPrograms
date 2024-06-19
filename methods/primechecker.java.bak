@@ -1,0 +1,23 @@
+class primechecker 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(num(7));
+	}
+	public static boolean num(int numb)
+	{
+		
+		for(int i=1; i<=numb; i++)
+		{
+			int count=0;
+			if(numb%i==0)
+			{
+				count++;
+
+			}
+			return count==2;
+		}
+		
+		
+	}
+}
